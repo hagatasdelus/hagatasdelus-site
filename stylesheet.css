@@ -38,4 +38,11 @@ footer {
     background-color: #4a4a4a;
     color: white;
 }
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+}
 
