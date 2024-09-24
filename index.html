@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <title>HaGaTa（Yoshiki）の自己紹介ページ</title>
+    <title>HaGaTa（Yoshiki）Site</title>
 </head>
 <body>
     <header>
@@ -13,28 +14,27 @@
 
     <nav>
         <ul>
-            <li><a href="#about">自己紹介</a></li>
-            <li><a href="#interests">趣味</a></li>
-            <li><a href="#projects">個人開発</a></li>
-            <li><a href="#contact">お問い合わせ</a></li>
+            <li><a href="#about" class="nav-link">自己紹介</a></li>
+            <li><a href="#interests" class="nav-link">趣味</a></li>
+            <li><a href="#projects" class="nav-link">個人開発</a></li>
+            <li><a href="#my-links" class="nav-link">My Links</a></li>
         </ul>
     </nav>
 
     <main>
         <section id="about">
             <h2>自己紹介</h2>
-            <img src="blue.png" alt="HaGaTa(Yoshiki)のプロフィール画像" class="profile-img">
+            <img src="blue.png" alt="HaGaTa（Yoshiki）のプロフィール写真" class="profile-img">
             <p>はじめまして、HaGaTa（Yoshiki）と申します。私は大阪府高槻市出身で、現在は京都の大学でコンピュータサイエンスを学んでいます。よろしくお願いします。</p>
         </section>
 
         <section id="interests">
             <h2>趣味・興味</h2>
             <ul>
-                <li>プログラミング</li>
-                <li>GitHubページの探索</li>
-                <li>Botの開発</li>
-                <li>技術書の読書</li>
-                <li>VALORANT競技シーン観戦</li>
+                <li class="interest-item tech">プログラミング</li>
+                <li class="interest-item tech">Botの開発</li>
+                <li class="interest-item reading">技術書の読書</li>
+                <li class="interest-item gaming">Esports競技シーン観戦</li>
             </ul>
         </section>
 
@@ -43,18 +43,29 @@
             <div class="project">
                 <h3>KanjiRush</h3>
                 <p>Flaskを使用して開発した漢字復習アプリケーションです。ユーザーが好きな漢字を登録して、クイズ形式で復習することができます。</p>
-                <a href="https://github.com/hagatasdelus/KanjiRush">プロジェクトを見る</a>
+                <a href="https://github.com/hagatasdelus/KanjiRush" class="project-link">プロジェクトを見る</a>
             </div>
             <div class="project">
                 <h3>ClipSpotter</h3>
                 <p>discord.pyを用いて開発した、Twitchのストリーマーまたはゲームの上位クリップを確認することができるDiscordBotです。Twitch APIを利用しています。</p>
-                <a href="https://github.com/hagatasdelus/ClipSpotter_for_personal">プロジェクトを見る</a>
+                <a href="https://github.com/hagatasdelus/ClipSpotter_for_personal" class="project-link">プロジェクトを見る</a>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>お問い合わせ</h2>
-            <p>Email: gsiyakav.c08nk@gmail.com</p>
+        <section id="my-links">
+            <h2>My Links</h2>
+            <div class="link-group">
+                <h3>[ E-Mail ]</h3>
+                <a href="mailto:gsiyakav.c08nk@gmail.com">gsiyakav.c08nk@gmail.com</a>
+            </div>
+            <div class="link-group">
+                <h3>[ Github ]</h3>
+                <a href="https://github.com/hagatasdelus">My profile page</a>
+            </div>
+            <div class="link-group">
+                <h3>[ Qiita ]</h3>
+                <a href="https://qiita.com/HaGaTa_">My page</a>
+            </div>
         </section>
     </main>
 

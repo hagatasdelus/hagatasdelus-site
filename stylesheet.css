@@ -5,44 +5,172 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #f0f0f0;
 }
+
 header {
-    background-color: #4a4a4a;
+    background-color: #1e0c73;
     color: white;
     text-align: center;
     padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
 nav {
     background-color: #f4f4f4;
     padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
+
 nav ul li {
-    display: inline;
     margin-right: 10px;
 }
+
+.nav-link {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0066cc;
+}
+
 section {
     margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
 .project {
     border: 1px solid #ddd;
     padding: 15px;
     margin-bottom: 15px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
 }
+
+.project:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #004499;
+}
+
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #4a4a4a;
+    background-color: #1e0c73;
     color: white;
+    border-radius: 5px;
+    margin-top: 20px;
 }
+
 .profile-img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     margin: 0 auto 20px;
     display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.interest-item {
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.interest-item.tech {
+    background-color: #BAE1FF;
+}
+
+.interest-item.reading {
+    background-color: #BAFFC9;
+}
+
+.interest-item.gaming {
+    background-color: #FFDFBA;
+}
+
+#my-links {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+#my-links h2 {
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4a4a4a;
+    padding-bottom: 10px;
+}
+
+.link-group {
+    margin-bottom: 15px;
+}
+
+.link-group h3 {
+    color: #0066cc;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+#my-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+#my-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #004499;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+#my-links a:hover {
+    color: #004499;
+    transform: translateX(5px);
+}
+
+#my-links a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
