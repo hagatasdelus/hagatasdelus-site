@@ -1,1 +1,1 @@
-https://hagatasdelus.github.io/hagatasdelus-site/
+https://hagatasdelus.github.io contains a personal introduction, SNS accounts, etc.
